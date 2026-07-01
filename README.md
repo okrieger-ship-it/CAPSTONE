@@ -48,7 +48,7 @@ CAPSTONE/
 | Document | Description |
 |----------|-------------|
 | [DATASHEET.md](./DATASHEET.md) | Dataset documentation following the Gebru et al. (2021) datasheet framework. Covers motivation, composition, collection process, preprocessing, uses, distribution and maintenance. |
-| [MODEL_CARD.md](./MODEL_CARD.md) | Model documentation following the Mitchell et al. (2019) model card framework. Covers approach overview, intended use, ten-round strategy, performance results, assumptions, limitations and ethical considerations. |
+| [MODEL_CARD.md](./MODEL_CARD.md) | Model documentation following the Mitchell et al. (2019) model card framework. Covers approach overview, intended use, thirteen-round strategy, performance results, assumptions, limitations and ethical considerations. |
 
 ---
 
@@ -71,9 +71,9 @@ CAPSTONE/
 
 1. Clone this repository
 2. Install dependencies: `pip install numpy scipy scikit-learn torch matplotlib`
-3. Open any `Module21_FX_Optimized_v2.ipynb` in Jupyter
+3. Open any `Module24_FX_Optimized_v2.ipynb` in Jupyter
 4. Update `DATA_DIR` to point to the correct `function_X/` folder
-5. Run all cells — the notebook will reproduce all 10 rounds of BO and generate visualisations
+5. Run all cells — the notebook will reproduce all 13 rounds of BO and generate visualisations
 
 > **Reproducibility:** All notebooks use `random_state=42` and `SEED=42`. Running on the same data will produce identical GP and NN suggestions.
 
