@@ -155,4 +155,4 @@ This optimisation approach makes irreversible, budget-constrained decisions — 
 
 ---
 
-*Model card created: June 2025. Framework: Mitchell et al., "Model Cards for Model Reporting," ACM FAccT 2019.*
+*Model card created: June 2026. Framework: Mitchell et al., "Model Cards for Model Reporting," ACM FAccT 2019.*
