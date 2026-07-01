@@ -76,16 +76,16 @@ The optimiser uses a **three-surrogate ensemble**:
 
 ### Best observed outputs by function
 
-| Function | Dimensions | Best y observed | Round achieved |
-|----------|-----------|----------------|----------------|
-| F1       | 2D        | 0.9153         | Week 3         |
-| F2       | 2D        | 0.7105         | Week 4         |
-| F3       | 3D        | -0.0349        | Initial data   |
-| F4       | 4D        | 0.6681         | Week 6         |
-| F5       | 4D        | 8662.48        | Week 5         |
-| F6       | 5D        | -0.4028        | Week 9         |
-| F7       | 6D        | 2.6718         | Week 2         |
-| F8       | 8D        | 9.9933         | Week 9         |
+| Function | Dimensions | Best output | Round |
+|----------|-----------|-------------|-------|
+| F1       | 2D        | 1.5578      | Week 12 |
+| F2       | 2D        | 0.7105      | Week 4 |
+| F3       | 3D        | -0.0356     | Week 5 |
+| F4       | 4D        | 0.6681      | Week 6 |
+| F5       | 4D        | 8662.48     | Week 5 |
+| F6       | 5D        | -0.2011     | Week 10 |
+| F7       | 6D        | 2.6718      | Week 2 |
+| F8       | 8D        | 9.9933      | Week 9 |
 
 ### Metrics used
 
@@ -110,7 +110,7 @@ The optimiser uses a **three-surrogate ensemble**:
 
 | Assumption | Impact if violated |
 |-----------|-------------------|
-| **Smoothness (Matérn kernel):** function varies continuously at a consistent rate | GP misses sharp peaks; EI collapses; F1 partially violates this |
+| **Smoothness (Matern kernel):** function varies continuously at a consistent rate | GP misses sharp peaks; EI collapses; F1 partially violates this |
 | **Determinism:** same input always returns same output | Noise-chasing in exploitation phase; calibration errors |
 | **Stationarity:** function structure is consistent across the input space | GP over-smooths heterogeneous landscapes; performance degrades in high-dimensional functions |
 | **Global coverage from Sobol:** 150k candidates adequately represent [0,1]^8 | Acquisition maximum may be missed; local optima returned instead |
