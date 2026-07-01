@@ -18,6 +18,10 @@ The optimisation pipeline combines:
 
 ---
 
+## What This Project Is (For Everyone)
+
+This project tackled a challenge that appears throughout science, engineering and business: how do you find the best setting for something when you cannot see inside it and each testing costs time or money? Over thirteen weeks, we ran an intelligent search across eight unknown mathematical functions, using a technique called Bayesian Optimisation. Think of it like a smart trial-and-error process that learns from each result and uses that learning to make a better guess next time rather than searching randomly. The system successfully identified strong-performing regions for all eight functions, with the most rewarding discoveries coming from recognising patterns early and adjusting the search strategy accordingly for each function's unique behaviour.
+
 ## Repository Structure
 
 ```
