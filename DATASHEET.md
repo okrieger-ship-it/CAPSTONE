@@ -75,7 +75,7 @@ Queries were generated through a Bayesian Optimisation pipeline implemented in J
 
 **Sampling strategy:** Quasi-random (Sobol sequences) for candidate generation; exploitation-dominant after Round 3 for well-behaved functions; manual override applied when GP suggestion contradicted strong empirical evidence.
 
-**Time frame:** Ten weekly rounds (Weeks 1–10, approximately April–June 2025). One query per function per round; 8 queries submitted per week.
+**Time frame:** Ten weekly rounds (Weeks 1–13, approximately April–June 2026). One query per function per round; 8 queries submitted per week.
 
 **Ethical review:** Not applicable. The black-box functions are mathematical constructs with no human subjects involved.
 
@@ -125,4 +125,4 @@ No further updates are planned after the capstone submission. The dataset is con
 
 ---
 
-*Datasheet created: June 2025. Framework: Gebru et al., "Datasheets for Datasets," ACM FAccT 2021.*
+*Datasheet created: June 2026. Framework: Gebru et al., "Datasheets for Datasets," ACM FAccT 2021.*
