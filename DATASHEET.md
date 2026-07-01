@@ -7,7 +7,7 @@
 ## 1. Motivation
 
 **Why was this dataset created?**
-This dataset was created as part of a Professional Certificate capstone project in Black-Box Optimisation (BBO). The goal is to explore and optimise eight unknown, unanalysable functions by querying them sequentially over ten weekly rounds. Each function accepts a vector of inputs in [0, 1]^d and returns a scalar output. Because the functions are black boxes — their internal structure, gradients and landscape are entirely unknown — the dataset supports the study of surrogate-model-based optimisation under strict query budgets.
+This dataset was created as part of a Professional Certificate capstone project in Black-Box Optimisation (BBO). The goal is to explore and optimise eight unknown, unanalysable functions by querying them sequentially over thirteen weekly rounds. Each function accepts a vector of inputs in [0, 1]^d and returns a scalar output. Because the functions are black boxes — their internal structure, gradients and landscape are entirely unknown — the dataset supports the study of surrogate-model-based optimisation under strict query budgets.
 
 **What task does it support?**
 The dataset supports Bayesian Optimisation research: fitting Gaussian Process (GP) surrogates, training auxiliary classifiers (SVM) and neural network regressors (MC-Dropout MLP), evaluating acquisition functions (Expected Improvement, Upper Confidence Bound), and comparing multi-model ensemble strategies under real-world constraints of one irreversible query per function per week.
@@ -75,7 +75,7 @@ Queries were generated through a Bayesian Optimisation pipeline implemented in J
 
 **Sampling strategy:** Quasi-random (Sobol sequences) for candidate generation; exploitation-dominant after Round 3 for well-behaved functions; manual override applied when GP suggestion contradicted strong empirical evidence.
 
-**Time frame:** Ten weekly rounds (Weeks 1–13, approximately April–June 2026). One query per function per round; 8 queries submitted per week.
+**Time frame:** Thirteen weekly rounds (Weeks 1–13, approximately April–June 2026). One query per function per round; 8 queries submitted per week.
 
 **Ethical review:** Not applicable. The black-box functions are mathematical constructs with no human subjects involved.
 
@@ -121,7 +121,7 @@ This dataset is shared for educational and research purposes under the MIT Licen
 The student maintains the dataset for the duration of the capstone project. No automated update pipeline exists; new weekly entries are added manually after each portal submission. Version history is tracked via Git commit history.
 
 **Future updates:**
-No further updates are planned after the capstone submission. The dataset is considered complete at 10 rounds × 8 functions.
+No further updates are planned after the capstone submission. The dataset is considered complete at 13 rounds × 8 functions.
 
 ---
 
