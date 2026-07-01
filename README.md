@@ -28,25 +28,17 @@ This project tackled a challenge that appears throughout science, engineering an
 CAPSTONE/
 │
 ├── README.md                        ← This file
-├── DATASHEET.md                     ← Dataset documentation (Mini-lesson 21.1 framework)
-├── MODEL_CARD.md                    ← Model documentation (Mini-lesson 21.2 framework)
+├── DATASHEET.md                     ← Dataset documentation
+├── MODEL_CARD.md                    ← Model documentation
 │
-├── Module24_F1_Optimized_v2.ipynb   ← F1 (2D) — full BO pipeline, 10 rounds
+├── Module24_F1_Optimized_v2.ipynb   ← F1 (2D)
 ├── Module24_F2_Optimized_v2.ipynb   ← F2 (2D)
 ├── Module24_F3_Optimized_v2.ipynb   ← F3 (3D)
 ├── Module24_F4_Optimized_v2.ipynb   ← F4 (4D)
-├── Module24_F5_Optimized_v2.ipynb   ← F5
-├── Module24_F6_Optimized_v2.ipynb   ← F6
-├── Module24_F7_Optimized_v2.ipynb   ← F7
+├── Module24_F5_Optimized_v2.ipynb   ← F5 (4D)
+├── Module24_F6_Optimized_v2.ipynb   ← F6 (5D)
+├── Module24_F7_Optimized_v2.ipynb   ← F7 (6D)
 ├── Module24_F8_Optimized_v2.ipynb   ← F8 (8D)
-│
-├── function_1/
-│   ├── initial_inputs.npy
-│   └── initial_outputs.npy
-├── function_2/ ...
-└── function_8/
-    ├── initial_inputs.npy
-    └── initial_outputs.npy
 ```
 
 ---
