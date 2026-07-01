@@ -1,16 +1,16 @@
 # BBO Capstone Project — Black-Box Optimisation
 
 **Emeritus / MIT Professional Education | Professional Certificate in ML & AI**
-**Modules 17–21 | April – June 2025**
+**Modules 17–24 | April – June 2026**
 
 ---
 
 ## Overview
 
-This repository contains the full implementation of a ten-round Black-Box Optimisation (BBO) capstone project. Eight unknown scalar functions of varying dimensionality (2D to 8D) were optimised sequentially using Bayesian Optimisation, one query per function per week, over ten weeks.
+This repository contains the full implementation of a thirteen-round Black-Box Optimisation (BBO) capstone project. Eight unknown scalar functions of varying dimensionality (2D to 8D) were optimised sequentially using Bayesian Optimisation, one query per function per week, over thirteen weeks.
 
 The optimisation pipeline combines:
-- **Gaussian Process surrogate** (Matérn ν=2.5 kernel, ARD length scales)
+- **Gaussian Process surrogate** (Matern ν=2.5 kernel, ARD length scales)
 - **SVM classifier** (candidate region filtering)
 - **MC-Dropout Neural Network** (secondary regression surrogate)
 - **Expected Improvement acquisition** with adaptive ξ decay
@@ -31,14 +31,14 @@ CAPSTONE/
 ├── DATASHEET.md                     ← Dataset documentation (Mini-lesson 21.1 framework)
 ├── MODEL_CARD.md                    ← Model documentation (Mini-lesson 21.2 framework)
 │
-├── Module21_F1_Optimized_v2.ipynb   ← F1 (2D) — full BO pipeline, 10 rounds
-├── Module21_F2_Optimized_v2.ipynb   ← F2 (2D)
-├── Module21_F3_Optimized_v2.ipynb   ← F3 (3D)
-├── Module21_F4_Optimized_v2.ipynb   ← F4 (4D)
-├── Module21_F5_Optimized_v2.ipynb   ← F5
-├── Module21_F6_Optimized_v2.ipynb   ← F6
-├── Module21_F7_Optimized_v2.ipynb   ← F7
-├── Module21_F8_Optimized_v2.ipynb   ← F8 (8D)
+├── Module24_F1_Optimized_v2.ipynb   ← F1 (2D) — full BO pipeline, 10 rounds
+├── Module24_F2_Optimized_v2.ipynb   ← F2 (2D)
+├── Module24_F3_Optimized_v2.ipynb   ← F3 (3D)
+├── Module24_F4_Optimized_v2.ipynb   ← F4 (4D)
+├── Module24_F5_Optimized_v2.ipynb   ← F5
+├── Module24_F6_Optimized_v2.ipynb   ← F6
+├── Module24_F7_Optimized_v2.ipynb   ← F7
+├── Module24_F8_Optimized_v2.ipynb   ← F8 (8D)
 │
 ├── function_1/
 │   ├── initial_inputs.npy
@@ -64,12 +64,12 @@ CAPSTONE/
 
 | Function | Dimensions | Best output | Round |
 |----------|-----------|-------------|-------|
-| F1       | 2D        | 0.9153      | Week 3 |
+| F1       | 2D        | 1.5578      | Week 12 |
 | F2       | 2D        | 0.7105      | Week 4 |
-| F3       | 3D        | -0.0349     | Initial |
+| F3       | 3D        | -0.0356     | Week 5 |
 | F4       | 4D        | 0.6681      | Week 6 |
 | F5       | 4D        | 8662.48     | Week 5 |
-| F6       | 5D        | -0.4028     | Week 9 |
+| F6       | 5D        | -0.2011     | Week 10 |
 | F7       | 6D        | 2.6718      | Week 2 |
 | F8       | 8D        | 9.9933      | Week 9 |
 
@@ -105,4 +105,4 @@ MIT License. See [LICENSE](./LICENSE) for details.
 
 ---
 
-*Created June 2025 as part of the Emeritus / MIT Professional Education BBO Capstone.*
+*Created June 2026 as part of the Emeritus / MIT Professional Education BBO Capstone.*
