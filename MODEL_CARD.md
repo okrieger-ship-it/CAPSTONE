@@ -9,10 +9,10 @@
 | Field | Detail |
 |-------|--------|
 | **Name** | BBO Capstone Optimiser |
-| **Version** | v2.0 (Optimised — Modules 17–21) |
+| **Version** | v2.0 (Optimised — Modules 17–24) |
 | **Type** | Bayesian Optimisation ensemble (GP + SVM + MC-Dropout NN) |
 | **Task** | Sequential black-box function maximisation under strict query budget |
-| **Developer** | Student, Emeritus / MIT Professional Education (2025) |
+| **Developer** | Student, Emeritus / MIT Professional Education (2026) |
 | **Language / Stack** | Python 3, scikit-learn, PyTorch, SciPy, NumPy |
 
 ---
@@ -40,7 +40,7 @@ Identify the maximum of an unknown, unanalysable scalar function f: [0,1]^d → 
 
 ---
 
-## 3. Details — Strategy Across Ten Rounds
+## 3. Details — Strategy Across Thirteen Rounds
 
 ### Architecture
 
@@ -48,7 +48,7 @@ The optimiser uses a **three-surrogate ensemble**:
 
 | Surrogate | Role | Uncertainty source |
 |-----------|------|-------------------|
-| Gaussian Process (Matérn ν=2.5) | Primary surrogate; drives EI | Bayesian posterior (exact) |
+| Gaussian Process (Matern ν=2.5) | Primary surrogate; drives EI | Bayesian posterior (exact) |
 | SVM (RBF kernel) | Candidate filter; defines "high-performing" region | P(high region) |
 | MC-Dropout MLP (2 × 32 ReLU) | Secondary regression surrogate | 200 stochastic forward passes |
 
@@ -69,12 +69,6 @@ The optimiser uses a **three-surrogate ensemble**:
 | Exploration | 1–3 | High ξ; Sobol coverage; UCB tested for some functions |
 | Transition | 4–6 | Adaptive ξ decaying; function-specific regimes begin |
 | Exploitation | 7–10 | Low ξ (≈ 0.01); return-to-best for plateaued functions; gradient continuation for trending functions |
-
-**Function-specific regimes by Round 10:**
-- **F1:** Return to Week 3 peak neighbourhood [0.646, 0.626]; NN surrogate used as tiebreaker
-- **F2:** Return-to-best (Week 4 optimum); GP EI near zero
-- **F3/F4:** Retreat to last confirmed high point after recent regressions
-- **F8:** Tight exploitation around Week 9 best (y = 9.993); x₅ ≈ 1.0 anchored
 
 ---
 
