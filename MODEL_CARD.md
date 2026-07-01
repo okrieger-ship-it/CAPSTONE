@@ -68,7 +68,7 @@ The optimiser uses a **three-surrogate ensemble**:
 |-------|--------|----------|
 | Exploration | 1–3 | High ξ; Sobol coverage; UCB tested for some functions |
 | Transition | 4–6 | Adaptive ξ decaying; function-specific regimes begin |
-| Exploitation | 7–10 | Low ξ (≈ 0.01); return-to-best for plateaued functions; gradient continuation for trending functions |
+| Exploitation | 7–13 | Low ξ (≈ 0.01); return-to-best for plateaued functions; gradient continuation for trending functions |
 
 ---
 
@@ -98,8 +98,8 @@ The optimiser uses a **three-surrogate ensemble**:
 - **F8:** Monotonically improving trend; clear directional signal; strong exploitation justified
 - **F5:** Rapid early gains (Week 5 peak at 8662.48); boundary-saturating landscape — optimal region near [1,1,1,1]; log-transform critical for GP calibration
 - **F7:** Best found at Week 2 (y = 2.672); subsequent rounds remained below that peak; volatile 6D landscape with heavy right-skew requiring log-transform
-- **F6:** Steady but slow improvement (all outputs negative, maximising toward zero); Week 9 best = -0.4028; x₅ consistently near 0 in high-performing queries
-- **F1:** Highly non-stationary; Week 3 spike followed by regression; GP unreliable away from peak
+- **F6:** Steady but slow improvement (all outputs negative, maximising toward zero); Week 10 best = -0.2011; x₅ consistently near 0 in high-performing queries
+- **F1:** Highly non-stationary; Week 3 spike followed by regression; new best of 1.5578 achieved at Week 12; GP unreliable away from peak
 - **F3/F4:** Volatile; regressions in later rounds suggest the GP landscape model is unreliable at this data density
 
 ---
@@ -148,7 +148,7 @@ This optimisation approach makes irreversible, budget-constrained decisions — 
 |------|--------|
 | Repository | Public GitHub repository (see README for link) |
 | License | MIT License |
-| Model code | Jupyter notebooks (Python 3) in `/capstone` directory |
+| Model code | Jupyter notebooks (Python 3) in root directory |
 | Data files | `.npy` arrays in `/function_X/` subdirectories |
 | Datasheet | `DATASHEET.md` (this repository) |
 | Model card | `MODEL_CARD.md` (this repository) |
